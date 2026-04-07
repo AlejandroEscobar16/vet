@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("fuentes/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("fuentes/Poppins-Regular.eot");
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url("fuentes/Poppins-Regular.woff");
+}
+
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url("fuentes/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url("fuentes/Poppins-Bold.eot");
+}
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url("fuentes/Poppins-Bold.woff");
+}
+
+@font-face {
+    font-family: 'Poppins-italic';
+    src: url("fuentes/Poppins-Italic.ttf");
+}
+@font-face {
+    font-family: 'Poppins-italic';
+    src: url("fuentes/Poppins-Italic.eot");
+}
+@font-face {
+    font-family: 'Poppins-italic';
+    src: url("fuentes/Poppins-Italic.woff");
+}
