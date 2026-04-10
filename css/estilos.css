@@ -13,7 +13,8 @@ body{
     max-width: 1500px;
     min-height: 550px;
 }
-.header{
+
+#header{
     padding: 30px 50px 50px 50px;
     display: flex;
     justify-content: space-between;
@@ -185,6 +186,31 @@ body{
   text-shadow: #000 5px 5px 15px;
 }
 
+/*------------------Animaciones-----------------------*/
+[data-animation="down"]{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: translateY(0);
+}
+
+[data-animation="right"]{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: .6s ease-in .3s;
+
+    --opacity: 1;
+    --transform: translateX(0);
+}
+
+.unset{
+    opacity: var(--opacity);
+    transform: var(--transform);
+}
+
+/*------------------//Animaciones-----------------------*/
 
 @media(max-width:750px) {
 
