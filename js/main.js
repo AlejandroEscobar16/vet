@@ -23,3 +23,25 @@ objetos.forEach(image =>{
     observer.observe(image);
 
 });
+
+//---------------------------Menu --------------------
+
+function appearMenu(entries){
+    entries.forEach(entry => {
+        const menu = document.querySelector('.menu');
+
+        menu.classList.toggle('unset2', entry.isIntersecting);
+
+    });
+}
+
+const options2 ={
+    root: null,
+    rootMargin: '0px',
+    thrshold: 1
+}
+
+const observer2 = new IntersectionObserver(appearMenu, options2);
+const menu = document.querySelector('.menu');
+
+observer2.observe(menu);

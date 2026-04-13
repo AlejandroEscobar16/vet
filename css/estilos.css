@@ -148,7 +148,6 @@ body{
 
 /*---------------------Footer-------------------*/
 .footer{
-    /*background-color: #9da528;*/
     background-image:radial-gradient(rgb(178, 233, 157), rgb(157, 165, 40, 1.0));
     color:#000;
     display: flex;
@@ -156,13 +155,22 @@ body{
     align-items: center;
     flex-wrap: wrap;
     padding: 40px;
-    min-height: 200px;
-    font-size: 20px;
+    min-height: 100px;
+    font-size: 18px;
+}
 
-    /*background-image: url(../imgs/img_portada.png);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto 100%;*/
+.datos_footer{
+    width: 100%;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+.footer a:hover{
+    color:#616619;
 }
 
 .wp{
@@ -187,28 +195,47 @@ body{
 }
 
 /*------------------Animaciones-----------------------*/
-[data-animation="down"]{
+
+/*------------------Animacion imagenes-----------------------*/
+
+[data-animation="up"]{
     opacity: 0;
     transform: translateY(100%);
-    transition: .6s ease-in .3s;
+    transition: .6s ease-out .3s;
 
     --opacity: 1;
     --transform: translateY(0);
 }
 
-[data-animation="right"]{
+[data-animation="escala"]{
     opacity: 0;
-    transform: translateX(-100%);
-    transition: .6s ease-in .3s;
+    transform: scale(0);
+    transition: .6s ease-out .3s;
 
     --opacity: 1;
-    --transform: translateX(0);
+    --transform: scale(100%);
 }
 
 .unset{
     opacity: var(--opacity);
     transform: var(--transform);
 }
+/*------------------Animacion menu-----------------------*/
+
+[data-animation="menu"]{
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: .6s ease-out .3s;
+
+    --opacity: 1;
+    --transform: translateY(0);
+}
+
+.unset2{
+    opacity: var(--opacity);
+    transform: var(--transform);
+}
+
 
 /*------------------//Animaciones-----------------------*/
 
